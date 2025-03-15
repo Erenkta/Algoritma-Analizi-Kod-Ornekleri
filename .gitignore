@@ -1,0 +1,38 @@
+# Genel .NET, C# ve Visual Studio dosyaları
+
+# Derleme çıktıları
+bin/
+obj/
+out/
+
+# Visual Studio yapılandırma dosyaları
+.vs/
+*.user
+*.suo
+*.cache
+*.csproj.user
+*.sln.docstates
+
+# Rider ve Resharper dosyaları
+.idea/
+*.DotSettings.user
+
+# Paketler
+packages/
+*.nupkg
+project.lock.json
+project.assets.json
+
+# Logs, temporary files
+*.log
+*.tmp
+*.bak
+
+# Debug ve Release çıktıları
+Debug/
+Release/
+
+# Geliştirici ortamına özel dosyalar
+*.vscode/
+*.DS_Store
+Thumbs.db
