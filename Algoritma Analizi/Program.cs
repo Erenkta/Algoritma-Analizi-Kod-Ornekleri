@@ -2,6 +2,7 @@
 using Algoritma_Analizi;
 using Algoritma_Analizi.Hafta_1;
 using Algoritma_Analizi.Hafta_2;
+using Algoritma_Analizi.Hafta_3;
 using System.Runtime.InteropServices;
 
 
@@ -45,9 +46,11 @@ Console.WriteLine("-------------------------------------------------------------
 
 MaxSubArraySum subArraySum = new MaxSubArraySum();
 int[] subArray = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+Console.WriteLine($"Alt dizi toplamı bulunacak array ( Böl ve Fethet ile ) :");
+ArrayLogger.PrintArray(subArray);
 int maxSum = subArraySum.MaxSubarraySum(subArray);
 
-Console.WriteLine($"Maksimum Alt Dizi Toplamı: {maxSum} ");
+Console.WriteLine($"\nMaksimum Alt Dizi Toplamı: {maxSum} ");
 
 Console.WriteLine("  \n Zaman karmaşıklığı : \n " +
     "Omega ( En iyi durum )   : n log(n) \n " +
@@ -56,6 +59,27 @@ Console.WriteLine("  \n Zaman karmaşıklığı : \n " +
 
 
 
+Console.WriteLine("----------------------------------------------------------------- \n");
+KadeneSubArray kadene = new KadeneSubArray();
+int[] nums = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+Console.WriteLine($"Alt dizi toplamı bulunacak array ( Kadene ile ) :");
+ArrayLogger.PrintArray(nums);
+Console.WriteLine("\nMaksimum Alt Dizi Toplamı: " + kadene.MaxSubarray(nums));
+
+Console.WriteLine("  \n Zaman karmaşıklığı : \n " +
+    "Omega ( En iyi durum )   : n \n " +
+    "Theta ( Ortalama durum ) : n \n " +
+    "Big-O ( En kötü durum )  : n \n");
 
 Console.WriteLine("----------------------------------------------------------------- \n");
+Power power = new Power();
+int a = 2;
+int b = 5;
+Console.WriteLine($"{a} üzeri {b} sonucu: " + power.PowerOfNumber(a, b));
 
+Console.WriteLine("  \n Zaman karmaşıklığı (a^b durumu için) : \n " +
+    "Omega ( En iyi durum )   : b \n " +
+    "Theta ( Ortalama durum ) : b \n " +
+    "Big-O ( En kötü durum )  : b \n");
+
+Console.WriteLine("----------------------------------------------------------------- \n");
