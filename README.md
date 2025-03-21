@@ -43,10 +43,10 @@ Bu uygulama aşağıdaki algoritmaların örneklerini içerir:
 6. *Dizi ile oluşturulmuş bir yapıya CRUD işlemleri*
    - Zaman karmaşıklığı:
     CRUD Zaman karmaşıklığı:
-    Create  : O(1), Başa Ekleme : O(n) , Var olan bir elemanın bulunduğu index'e ekleme O(n)
-    Read    : O(n)
-    Update  : O(1)
-    Delete  : O(n)
+    Create  : O(1), Başa Ekleme : O(n) , Var olan bir elemanın bulunduğu index'e ekleme O(n)  
+    Read    : O(n)  
+    Update  : O(1)  
+    Delete  : O(n)  
 
 ## Kullanılan Sınıflar ve Yöntemler
 
